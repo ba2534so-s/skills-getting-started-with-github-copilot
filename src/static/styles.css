@@ -165,14 +165,20 @@ footer {
   padding: 4px 0;
   font-size: 0.9em;
   color: #666;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.participants-list li:before {
-  content: "•";
-  color: #1a237e;
-  display: inline-block;
-  width: 1em;
-  margin-left: 0;
+.delete-participant {
+  cursor: pointer;
+  color: #c62828;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.delete-participant:hover {
+  opacity: 1;
 }
 
 .no-participants {
